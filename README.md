@@ -18,11 +18,11 @@ Customi_fy est une plateforme innovante qui permet aux utilisateurs de personnal
 
 ## 📸 Aperçu  
 
-![Aperçu du site](https://abdel.alwaysdata.net/Customi_fy/index.php)  
+🔗 **Aperçu du site** : [Clique ici](https://abdel.alwaysdata.net/Customi_fy/index.php)
 
 ## 📌 Installation  
 
 1. **Clonez le dépôt**  
    ```sh
-   git clone https://github.com/ton-utilisateur/customi_fy.git
+   git clone https://github.com/ton-utilisateur/customi_fy
    cd customi_fy
