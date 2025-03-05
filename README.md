@@ -24,5 +24,5 @@ Customi_fy est une plateforme innovante qui permet aux utilisateurs de personnal
 
 1. **Clonez le dépôt**  
    ```sh
-   git clone https://github.com/ton-utilisateur/customi_fy
+   git clone https://github.com/AbdelBakiY/customi_fy
    cd customi_fy
