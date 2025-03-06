@@ -31,12 +31,6 @@
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 🔹 Effet de scroll fixe */
-.site-header .top-head.scrolled {
-  background-color: #d5b2a8;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
 /* Animation pour la top-head */
 @keyframes fadeInTop {
   from {
@@ -183,7 +177,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-
 .site-header .top-head .cnx:hover {
   background: linear-gradient(135deg, #3d2c2a, #a87c73);
   opacity: 0.9;
@@ -233,11 +226,48 @@
 }
 
 #mySidenav .closebtn {
+    position: absolute;
+    top: 10px;  /* Légère marge en haut */
+    right: 20px; /* Positionné bien à droite */
+    
+    font-size: 36px;
+    cursor: pointer; /* Curseur interactif */
+    color: white;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#mySidenav .closebtn:hover {
+  color: #ff1900;
+  transform: translateX(10px);
+}
+
+/* Effet de flou */
+.blur-background {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}
+
+/* 🔹 Conteneur des icônes sociales */
+.social-icons {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  bottom: 15px; /* Ajuste la distance par rapport au bas du menu */
+  left: 50%;
+  transform: translateX(-50%); /* Centre parfaitement les icônes */
+  display: flex;
+  
+}
+
+/* 🔹 Style des icônes */
+.social-icons a img {
+  width: 30px; /* Taille ajustée des icônes */
+  height: 30px;
+  object-fit: contain;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* 🔹 Effet au survol : changement d'opacité uniquement */
+.social-icons a:hover img {
+  opacity: 0.6;
 }
 
 /* 👉 RESPONSIVE DESIGN */

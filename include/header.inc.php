@@ -49,9 +49,9 @@
             <div class="menu">
                 <span class="menu-bar" onclick="openNav()" style='color:#734F43;'><strong>
 
-                    ☰ <span class="menu-text">Menu</span>
+                        ☰ <span class="menu-text">Menu</span>
                 </span>
-            </strong>
+                </strong>
             </div>
             <div class="titre"><a href="index.php">
                     <h1><strong>CUSTOMI FY</strong></h1>
@@ -80,13 +80,25 @@
         <a href="index.php">Accueil</a>
         <a href="nouveautes.php">Nouveautés</a>
         <a href="contact.php">Contact</a>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/customi_fy" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@custumi_fy" target="_blank">
+                <img src="images/tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://www.facebook.com/share/1EJJwYB6GG/" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+        </div>
+
     </div>
 
 
     <script>
         // Fonction pour ouvrir la sidebar
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("mySidenav").style.width = "200px";
             document.querySelector('header').classList.add("blur-background");
             document.querySelector('main').classList.add("blur-background");
         }
@@ -103,6 +115,15 @@
                 topNav.classList.add("scrolled");
             } else {
                 topNav.classList.remove("scrolled");
+            }
+        });
+        document.addEventListener("click", function(event) {
+            var sidebar = document.getElementById("mySidenav");
+            var menuButton = document.querySelector(".menu-bar");
+
+            // Vérifie si le clic est à l'extérieur du menu ET n'est pas sur le bouton menu
+            if (!sidebar.contains(event.target) && !menuButton.contains(event.target)) {
+                closeNav();
             }
         });
 
