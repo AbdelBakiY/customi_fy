@@ -1,10 +1,6 @@
 <?php require_once("include/functions.inc.php");
-// session_start();
-// if (isset($_SESSION['mode'])) {
-//     $prenom = $_SESSION['prenom'];
-// } else {
-//     $prenom = "";
-// }
+session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +40,7 @@
 
 <body>
     <header class="site-header">
-        <div class="top-head site-nav" id="top-head">
+        <div class="top-head" id="top-head">
             <!-- Sidebar menu -->
             <div class="menu">
                 <span class="menu-bar" onclick="openNav()" style='color:#734F43;'><strong>
@@ -109,14 +105,7 @@
             document.querySelector('header').classList.remove("blur-background");
             document.querySelector('main').classList.remove("blur-background");
         }
-        window.addEventListener("scroll", function() {
-            var topNav = document.getElementById("top-head");
-            if (window.pageYOffset > 0) {
-                topNav.classList.add("scrolled");
-            } else {
-                topNav.classList.remove("scrolled");
-            }
-        });
+
         document.addEventListener("click", function(event) {
             var sidebar = document.getElementById("mySidenav");
             var menuButton = document.querySelector(".menu-bar");
@@ -129,8 +118,11 @@
 
 
         window.addEventListener("scroll", function() {
-            let navbar = document.querySelector(".site-header .top-head");
-            if (window.scrollY > 50) { // Si l'utilisateur scrolle plus de 50px
+            let navbar = document.getElementById("top-head");
+
+            console.log("Scroll détecté ! Position actuelle :", window.scrollY); // DEBUG
+
+            if (window.scrollY > 50) {
                 navbar.classList.add("scrolled");
             } else {
                 navbar.classList.remove("scrolled");
