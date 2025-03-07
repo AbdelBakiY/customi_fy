@@ -33,7 +33,7 @@ require_once("include/header.inc.php");
                     </a>
                 </div>
                 <div class="univer">
-                    <a href="univers/univer_bebe.php"><img src="images/univers/papeterie_evenementiel.png" alt="Papeterie Événementiel">
+                    <a href="univers/papeterie_evenementiel.php"><img src="images/univers/papeterie_evenementiel.png" alt="Papeterie Événementiel">
                         <h3>Papeterie Événementiel</h3>
                     </a>
                 </div>
@@ -50,7 +50,7 @@ require_once("include/header.inc.php");
 
                 </div>
                 <div class="univer">
-                    <a href="univers/univer_cini.php"><img src="images/univers/univer_dini.png" alt="Univer Dini">
+                    <a href="univers/univer_dini.php"><img src="images/univers/univer_dini.png" alt="Univer Dini">
                         <h3>Univer Dini</h3>
                     </a>
 

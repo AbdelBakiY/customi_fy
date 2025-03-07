@@ -74,8 +74,11 @@ session_start();
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="index.php">Accueil</a>
-        <a href="nouveautes.php">Nouveautés</a>
-        <a href="contact.php">Contact</a>
+        <a href="univers/univer_bebe.php">Univer bébé</a>
+        <a href="univers/papeterie_evenementiel.php">Papeterie Événementiel</a>
+        <a href="univers/univer_mariage.php">Univer Mariage</a>
+        <a href="univers/univer_cadeau.php">Univer Cadeau</a>
+        <a href="univers/univer_dini.php">Univer Dini</a>
         <div class="social-icons">
             <a href="https://www.instagram.com/customi_fy" target="_blank">
                 <img src="images/instagram.png" alt="Instagram">

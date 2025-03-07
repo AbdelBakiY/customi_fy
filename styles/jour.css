@@ -263,8 +263,10 @@ body {
   position: absolute;
   bottom: 15px; /* Ajuste la distance par rapport au bas du menu */
   left: 50%;
+  
   transform: translateX(-50%); /* Centre parfaitement les icônes */
   display: flex;
+     /* Espacement entre les icônes */
 }
 
 /* 🔹 Style des icônes */
@@ -273,81 +275,15 @@ body {
   height: 30px;
   object-fit: contain;
   transition: opacity 0.3s ease-in-out;
+
 }
 
 /* 🔹 Effet au survol : changement d'opacité uniquement */
-.social-icons a:hover img {
-  opacity: 0.6;
+.social-icons a img:hover  {
+    transform: scale(1.1);
+
 }
 
-/* 👉 RESPONSIVE DESIGN */
-@media (max-width: 1024px) {
-  .site-header .titre {
-    font-size: 2.3em;
-  }
-  .site-header .decouvrir a {
-    font-size: 1em;
-    padding: 12px 30px;
-  }
-  .site-header .titre-page {
-    font-size: 1.5em;
-    width: 90%; /* S'étend plus sur tablettes */
-  }
-}
-
-@media (max-width: 768px) {
-  .site-header .top-head {
-    padding: 10px 5%;
-  }
-  .site-header .titre {
-    font-size: 1.8em;
-  }
-  .site-header .decouvrir a {
-    font-size: 0.9em;
-    padding: 10px 25px;
-  }
-  .site-header .top-head .titre {
-    font-size: 0.9em;
-  }
-  .site-header .top-head .cnx {
-    padding: 8px 16px;
-  }
-  .site-header .titre-page {
-    font-size: 1.3em;
-    padding: 12px 25px;
-    width: 95%; /* Presque pleine largeur */
-  }
-}
-
-@media (max-width: 480px) {
-  .site-header .titre {
-    font-size: 1.5em;
-  }
-  .site-header .decouvrir a {
-    font-size: 0.8em;
-    padding: 8px 20px;
-  }
-  .site-header .top-head .titre {
-    font-size: 0.5em;
-  }
-  .site-header .top-head .cnx {
-    padding: 6px 12px;
-  }
-  .menu .menu-text {
-    display: none;
-  }
-  .site-header .titre-page {
-    font-size: 1.1em;
-    padding: 10px 20px;
-    width: 100%; /* Pleine largeur pour petits écrans */
-  }
-  .box-acceuil .phrase-acceuil {
-    font-size: 1em;
-  }
-  .box-acceuil .h2-acceuil {
-    font-size: 1.5em;
-  }
-}
 
 /* Contenu page index */
 
@@ -554,4 +490,131 @@ form #exchangeIcon:hover {
   font-size: 0.9em;
   padding-top: 15px;
   opacity: 0.8;
+}
+
+
+
+/* 👉 RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+    .site-header .titre {
+        font-size: 2.3em;
+    }
+    .site-header .decouvrir a {
+        font-size: 1em;
+        padding: 12px 30px;
+    }
+    .site-header .titre-page {
+        font-size: 1.5em;
+        width: 90%; /* S'étend plus sur tablettes */
+    }
+    .univers-container {
+        max-width: 1000px;
+        padding: 3%;
+    }
+    .univer {
+        width: 220px;
+        height: 340px;
+    }
+    .univer img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header .top-head {
+        padding: 10px 5%;
+    }
+    .site-header .titre {
+        font-size: 1.8em;
+    }
+    .site-header .decouvrir a {
+        font-size: 0.9em;
+        padding: 10px 25px;
+    }
+    .site-header .top-head .titre {
+        font-size: 0.9em;
+    }
+    .site-header .top-head .cnx {
+        padding: 8px 16px;
+    }
+    .site-header .titre-page {
+        font-size: 1.3em;
+        padding: 12px 25px;
+        width: 95%;
+    }
+    .box-acceuil .phrase-acceuil {
+        font-size: 0.6em;
+    }
+    .box-acceuil .h2-acceuil {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    .h2-univers {
+        font-size: 1.2em;
+    }
+    .univers-container {
+        max-width: 750px;
+        padding: 4%;
+    }
+    .univers {
+        padding: 8px;
+    }
+    .univer {
+        width: 200px;
+        height: 320px;
+    }
+    .univer img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header .titre {
+        font-size: 1.5em;
+    }
+    .site-header .decouvrir a {
+        font-size: 0.8em;
+        padding: 8px 20px;
+    }
+    .site-header .top-head .titre {
+        font-size: 0.5em;
+    }
+    .site-header .top-head .cnx {
+        padding: 6px 12px;
+    }
+    .menu .menu-text {
+        display: none;
+    }
+    .site-header .titre-page {
+        font-size: 1.1em;
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .box-acceuil .phrase-acceuil {
+        font-size: 0.5em;
+    }
+    .box-acceuil .h2-acceuil {
+        padding: 5px;
+        font-size: 1em;
+    }
+    .h2-univers {
+        font-size: 1em;
+    }
+    .univers-container {
+        max-width: 100%;
+        padding: 5%;
+        border-radius: 5px;
+    }
+    .univers {
+        padding: 5px;
+    }
+    .univer {
+        width: 150px;
+        height: 250px;
+        margin-right: 10px;
+    }
+    .univer img {
+        height: 200px;
+    }
 }
