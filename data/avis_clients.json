@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Sophie L.",
+      "rating": 5,
+      "review": "J'ai reçu ma commande et je suis vraiment ravie ! La qualité est incroyable, je recommanderai sans hésiter.",
+      "image": "images/logo.png"
+    },
+    {
+      "name": "Thomas B.",
+      "rating": 4,
+      "review": "Très satisfait de mon achat. Le produit correspond bien à la description et la livraison a été rapide.",
+      "image": "images/logo.png"
+    },
+    {
+      "name": "Emma R.",
+      "rating": 5,
+      "review": "Magnifique ! Le packaging est soigné et le produit est encore mieux en vrai.",
+      "image": "images/logo.png"
+    },
+    {
+      "name": "Lucas M.",
+      "rating": 4,
+      "review": "Bonne qualité et bon service client, juste un peu long pour la livraison.",
+      "image": "images/logo.png"
+    },
+    {
+      "name": "Camille D.",
+      "rating": 5,
+      "review": "J'adore ! Je suis tellement contente de mon achat. Merci beaucoup !",
+      "image": "images/logo.png"
+    },
+    {
+      "name": "Hugo V.",
+      "rating": 5,
+      "review": "Service impeccable, produit conforme, je recommande à 100% !",
+      "image": "images/logo.png"
+    },
+    {
+      "name": "Elodie S.",
+      "rating": 4,
+      "review": "Très beau produit, qualité au top. Un peu cher mais ça vaut le coup !",
+      "image": "images/logo.png"
+    },
+    {
+      "name": "Nicolas G.",
+      "rating": 5,
+      "review": "Tout est parfait, de la commande à la réception. Merci pour ce superbe produit !",
+      "image": "images/logo.png"
+    },
+    {
+      "name": "Julie P.",
+      "rating": 5,
+      "review": "Une très belle découverte, je repasserai commande c'est sûr !",
+      "image": "images/logo.png"
+    },
+    {
+      "name": "Maxime T.",
+      "rating": 4,
+      "review": "Produit conforme et belle qualité, juste un petit retard de livraison.",
+      "image": "images/logo.png"
+    }
+  ]
+  

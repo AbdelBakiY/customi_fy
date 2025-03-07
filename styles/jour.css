@@ -263,10 +263,10 @@ body {
   position: absolute;
   bottom: 15px; /* Ajuste la distance par rapport au bas du menu */
   left: 50%;
-  
+
   transform: translateX(-50%); /* Centre parfaitement les icônes */
   display: flex;
-     /* Espacement entre les icônes */
+  /* Espacement entre les icônes */
 }
 
 /* 🔹 Style des icônes */
@@ -275,15 +275,12 @@ body {
   height: 30px;
   object-fit: contain;
   transition: opacity 0.3s ease-in-out;
-
 }
 
 /* 🔹 Effet au survol : changement d'opacité uniquement */
-.social-icons a img:hover  {
-    transform: scale(1.1);
-
+.social-icons a img:hover {
+  transform: scale(1.1);
 }
-
 
 /* Contenu page index */
 
@@ -314,6 +311,8 @@ body {
 }
 
 .h2-univers {
+  font-size: 2em;
+
   margin-bottom: 1%;
   margin-left: 1%;
 }
@@ -361,24 +360,23 @@ body {
   color: #734f43;
 }
 
-
 .univer img {
   width: 100%;
   height: 320px; /* Hauteur fixe pour les images */
   object-fit: cover; /* Ajuste l'image sans la déformer */
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .univer:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .univer h3 {
-    margin-top:1%;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin-top: 1%;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .univer:hover h3 {
-    transform: translateY(10px);
+  transform: translateY(10px);
 }
 
 /* Boutons de navigation */
@@ -414,207 +412,437 @@ body {
   display: block;
 }
 
-/** 🔹 Footer Stylisé **/
+/* Style global de la section */
+.chez {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adaptatif */
+  gap: 20px;
+  padding: 40px 5%;
+  background: linear-gradient(135deg, #e5c5bd, #f8e1d4); /* Dégradé élégant */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
+/* Titre principal */
+.h2-chez {
+  text-align: center;
+  font-size: 2em;
+  color: #734f43;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  margin-top: 2%;
+}
+
+/* Conteneur de chaque bloc */
+.chez-text {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Titre des blocs */
+.chez-text h3 {
+  font-size: 1.5em;
+  color: #734f43;
+  margin-bottom: 10px;
+}
+
+/* Texte */
+.chez-text p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Effet au survol */
+.chez-text:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 🌟 AVIS CLIENTS */
+.avis-clients {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f8f6f4;
+}
+.avis-title {
+  font-size: 2.5em;
+  color: #d38ba0;
+  margin-bottom: 20px;
+}
+.avis-container {
+  overflow: hidden;
+  position: relative;
+  max-width: 80%;
+  margin: auto;
+}
+.avis-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.avis-card {
+  background: #fdfaf6;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 0 0 33%;
+  margin: 0 10px;
+  text-align: center;
+}
+.stars {
+  color: #ffbb00;
+  font-size: 1.5em;
+}
+.avis-text {
+  font-size: 1em;
+  color: #7a6262;
+}
+.avis-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+.avis-client {
+  font-size: 0.9em;
+  color: #b58999;
+  font-style: italic;
+}
+.avis-dots {
+  margin-top: 15px;
+}
+.avis-dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #d38ba0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* 🌟 FOOTER STYLE */
 footer {
-  background-color: #e5c5bd;
-  color: #734f43;
-  padding: 3%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(135deg, #2c2c2c, #734f43); /* Dégradé élégant */
+  color: white;
+  padding: 50px 5%;
+  text-align: center;
+  margin-top: 2%;
 }
 
-footer a {
-  color: #734f43;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
+/* 🌟 Conteneur principal */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-footer a:hover {
-  color: #d5b2a8;
-  text-decoration: underline;
+/* 🌟 Section logo */
+.footer-logo img {
+  width: 100px; /* Taille ajustée du logo */
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3)); /* Effet stylisé */
+}
+.footer-logo p {
+  font-size: 1em;
+  color: #f1f1f1;
 }
 
-footer ul {
+/* 🌟 Navigation */
+.footer-links h3,
+.footer-social h3,
+.footer-newsletter h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer-links ul {
   list-style: none;
   padding: 0;
 }
 
-footer ul li {
-  display: flex;
-  align-items: center;
-  margin-top: 5%;
+.footer-links ul li {
+  margin: 8px 0;
 }
 
-/* 🔹 Structure du footer */
-.top-foot {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 20px;
+.footer-links ul li a {
+  text-decoration: none;
+  color: #f8e1d4;
+  transition: color 0.3s ease;
 }
 
-.top-foot span {
-  font-weight: bold;
-  color: #734f43;
-  font-size: 1.2em;
+.footer-links ul li a:hover {
+  color: #fff;
 }
 
-/* 🔹 Icône d'échange stylisée */
-form #exchangeIcon {
-  cursor: pointer;
-  text-align: center;
-  font-size: 24px;
-  background-color: white;
-  color: #734f43;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+/* 🌟 Réseaux sociaux */
+.footer-social .social-icons-footer {
   display: flex;
-  align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  gap: 15px;
+  margin-top: 10px;
 }
 
-form #exchangeIcon:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+.footer-social .social-icons-footer a img {
+  width: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.9);
 }
 
-/* 🔹 Partie inférieure du footer */
-.bottom-foot {
-  text-align: center;
+.footer-social .social-icons-footer a:hover img {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+/* 🌟 Newsletter */
+.footer-newsletter p {
   font-size: 0.9em;
-  padding-top: 15px;
-  opacity: 0.8;
+  margin-bottom: 10px;
 }
 
+.footer-newsletter form {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
 
+.footer-newsletter input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 70%;
+  max-width: 250px;
+  font-size: 1em;
+}
+
+.footer-newsletter button {
+  background: #734f43;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 1em;
+}
+
+.footer-newsletter button:hover {
+  background: #5a3a31;
+  transform: scale(1.05);
+}
+
+/* 🌟 Bas du footer */
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 15px;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.7);
+}
 
 /* 👉 RESPONSIVE DESIGN */
-
 @media (max-width: 1024px) {
-    .site-header .titre {
-        font-size: 2.3em;
-    }
-    .site-header .decouvrir a {
-        font-size: 1em;
-        padding: 12px 30px;
-    }
-    .site-header .titre-page {
-        font-size: 1.5em;
-        width: 90%; /* S'étend plus sur tablettes */
-    }
-    .univers-container {
-        max-width: 1000px;
-        padding: 3%;
-    }
-    .univer {
-        width: 220px;
-        height: 340px;
-    }
-    .univer img {
-        height: 280px;
-    }
+  .h2-chez,.h2-univers{
+    font-size: 1.5em; /* Réduit de 0.5 */
+  }
+  .chez {
+    padding: 30px 5%;
+  }
+  .chez-text h3 {
+    font-size: 1.3em;
+  }
+  .chez-text p {
+    font-size: 0.95em;
+  }
+  .site-header .titre {
+    font-size: 2.3em;
+  }
+  .site-header .decouvrir a {
+    font-size: 1em;
+    padding: 12px 30px;
+  }
+  .site-header .titre-page {
+    font-size: 1.5em;
+    width: 90%;
+  }
+  .univers-container {
+    max-width: 1000px;
+    padding: 3%;
+  }
+  .univer {
+    width: 220px;
+    height: 340px;
+  }
+  .univer img {
+    height: 280px;
+  }
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-    .site-header .top-head {
-        padding: 10px 5%;
-    }
-    .site-header .titre {
-        font-size: 1.8em;
-    }
-    .site-header .decouvrir a {
-        font-size: 0.9em;
-        padding: 10px 25px;
-    }
-    .site-header .top-head .titre {
-        font-size: 0.9em;
-    }
-    .site-header .top-head .cnx {
-        padding: 8px 16px;
-    }
-    .site-header .titre-page {
-        font-size: 1.3em;
-        padding: 12px 25px;
-        width: 95%;
-    }
-    .box-acceuil .phrase-acceuil {
-        font-size: 0.6em;
-    }
-    .box-acceuil .h2-acceuil {
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    .h2-univers {
-        font-size: 1.2em;
-    }
-    .univers-container {
-        max-width: 750px;
-        padding: 4%;
-    }
-    .univers {
-        padding: 8px;
-    }
-    .univer {
-        width: 200px;
-        height: 320px;
-    }
-    .univer img {
-        height: 260px;
-    }
+  .h2-chez,.h2-univers {
+    font-size: 1em; /* Réduit de 0.5 */
+  }
+  .chez {
+    grid-template-columns: 1fr;
+  }
+  .chez-text {
+    padding: 15px;
+  }
+  .chez-text h3 {
+    font-size: 1.2em;
+  }
+  .chez-text p {
+    font-size: 0.9em;
+  }
+  .site-header .top-head {
+    padding: 10px 5%;
+  }
+  .site-header .titre {
+    font-size: 1.8em;
+  }
+  .site-header .decouvrir a {
+    font-size: 0.9em;
+    padding: 10px 25px;
+  }
+  .site-header .top-head .titre {
+    font-size: 0.9em;
+  }
+  .site-header .top-head .cnx {
+    padding: 8px 16px;
+  }
+  .site-header .titre-page {
+    font-size: 1.3em;
+    padding: 12px 25px;
+    width: 95%;
+  }
+  .box-acceuil .phrase-acceuil {
+    font-size: 0.6em;
+  }
+  .box-acceuil .h2-acceuil {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  .h2-univers {
+    font-size: 1.2em;
+  }
+  .univers-container {
+    max-width: 750px;
+    padding: 4%;
+  }
+  .univers {
+    padding: 8px;
+  }
+  .univer {
+    width: 200px;
+    height: 320px;
+  }
+  .univer img {
+    height: 260px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-newsletter form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-newsletter input,
+  .footer-newsletter button {
+    width: 100%; /* Ils prennent toute la largeur */
+    max-width: none; /* Pas de limite de largeur */
+  }
 }
 
 @media (max-width: 480px) {
-    .site-header .titre {
-        font-size: 1.5em;
-    }
-    .site-header .decouvrir a {
-        font-size: 0.8em;
-        padding: 8px 20px;
-    }
-    .site-header .top-head .titre {
-        font-size: 0.5em;
-    }
-    .site-header .top-head .cnx {
-        padding: 6px 12px;
-    }
-    .menu .menu-text {
-        display: none;
-    }
-    .site-header .titre-page {
-        font-size: 1.1em;
-        padding: 10px 20px;
-        width: 100%;
-    }
-    .box-acceuil .phrase-acceuil {
-        font-size: 0.5em;
-    }
-    .box-acceuil .h2-acceuil {
-        padding: 5px;
-        font-size: 1em;
-    }
-    .h2-univers {
-        font-size: 1em;
-    }
-    .univers-container {
-        max-width: 100%;
-        padding: 5%;
-        border-radius: 5px;
-    }
-    .univers {
-        padding: 5px;
-    }
-    .univer {
-        width: 150px;
-        height: 250px;
-        margin-right: 10px;
-    }
-    .univer img {
-        height: 200px;
-    }
+  .h2-chez,.h2-univers {
+    font-size: 1em; /* Réduit de 0.5 */
+  }
+  .chez {
+    padding: 20px 5%;
+  }
+  .chez-text {
+    padding: 12px;
+  }
+  .chez-text h3 {
+    font-size: 1.1em;
+  }
+  .chez-text p {
+    font-size: 0.85em;
+  }
+  .site-header .titre {
+    font-size: 1.5em;
+  }
+  .site-header .decouvrir a {
+    font-size: 0.8em;
+    padding: 8px 20px;
+  }
+  .site-header .top-head .titre {
+    font-size: 0.5em;
+  }
+  .site-header .top-head .cnx {
+    padding: 6px 12px;
+  }
+  .menu .menu-text {
+    display: none;
+  }
+  .site-header .titre-page {
+    font-size: 1.1em;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  .box-acceuil .phrase-acceuil {
+    font-size: 0.5em;
+  }
+  .box-acceuil .h2-acceuil {
+    padding: 5px;
+    font-size: 1em;
+  }
+  .h2-univers {
+    font-size: 1em;
+  }
+  .univers-container {
+    max-width: 100%;
+    padding: 5%;
+    border-radius: 5px;
+  }
+  .univers {
+    padding: 5px;
+  }
+  .univer {
+    width: 150px;
+    height: 250px;
+    margin-right: 10px;
+  }
+  .univer img {
+    height: 200px;
+  }
+  .footer-container {
+    gap: 20px;
+  }
+  .footer-social .social-icons {
+    gap: 10px;
+  }
+  .footer-newsletter input {
+    font-size: 0.9em;
+  }
+  .footer-newsletter button {
+    font-size: 0.9em;
+  }
 }
