@@ -528,6 +528,221 @@ body {
   cursor: pointer;
 }
 
+/*************************************
+ * FORMULAIRE DE CONNEXION
+ *************************************/
+
+/* Style du titre de la page de connexion */
+main h2 {
+  text-align: center;
+  color: #734f43;
+  font-family: "Tenor Sans", sans-serif; /* ou 'Montserrat' selon tes préférences */
+  font-size: 2em;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Conteneur principal du formulaire */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto; /* Centre le formulaire */
+  background-color: #f8edeb; /* Couleur de fond douce */
+  border: 1px solid #e5c5bd; /* Léger rappel de la palette */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Espace vertical entre les éléments */
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Labels du formulaire */
+.form-label {
+  color: #3d2c2a;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+/* Champs de saisie */
+.form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #3d2c2a;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #a87c73;
+  box-shadow: 0 0 5px rgba(168, 124, 115, 0.3);
+}
+
+/* Lien pour mot de passe oublié et inscription */
+.form-link {
+  text-decoration: none;
+  color: #3d2c2a;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  margin-top: 0.3rem;
+  transition: color 0.3s ease;
+}
+
+.form-link:hover {
+  color: #a87c73;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Bouton de soumission */
+.form-submit {
+  cursor: pointer;
+  background: linear-gradient(135deg, #a87c73, #3d2c2a);
+  color: #fff;
+  font-weight: 600;
+  font-family: "Tenor Sans", sans-serif; /* Pour se rapprocher du style des autres boutons du site */
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+}
+
+.form-submit:hover {
+  background: linear-gradient(135deg, #3d2c2a, #a87c73);
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Messages d'erreur éventuels */
+#mail_faux,
+#mdp_faux {
+  display: none; /* Géré en JS ou dynamiquement */
+  color: red;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/*************************************
+ * FORMULAIRE D'INSCRIPTION
+ *************************************/
+
+/* Titre de la page d'inscription */
+main h2 {
+  text-align: center;
+  color: #734f43;
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 2em;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Conteneur principal du formulaire */
+.form-container-inscription {
+  max-width: 500px;
+  margin: 0 auto; /* Centre le formulaire */
+  background-color: #f8edeb; /* Fond doux */
+  border: 1px solid #e5c5bd; /* Léger rappel de la palette */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Espace vertical entre les éléments */
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Labels du formulaire */
+.form-label {
+  color: #3d2c2a;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+/* Champs de saisie */
+.form-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #3d2c2a;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #a87c73;
+  box-shadow: 0 0 5px rgba(168, 124, 115, 0.3);
+}
+
+/* Message d'informations sur le mot de passe */
+#mdp_message {
+  font-size: 0.9rem;
+  margin-top: -0.3rem;
+  margin-bottom: 0.3rem;
+  text-align: left; /* Ajustable selon l'effet souhaité */
+}
+
+/* Exemples de classes pour message de validation ou d'erreur */
+#mdp_message.success {
+  color: green;
+}
+
+#mdp_message.error {
+  color: red;
+}
+
+/* Messages d'erreur pour la confirmation de mot de passe et l’e-mail déjà existant */
+#non_cor,
+#deja_mail {
+  display: none; /* Géré dynamiquement par JS/PHP */
+  color: red;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Bouton de soumission */
+.form-submit {
+  cursor: pointer;
+  background: linear-gradient(135deg, #a87c73, #3d2c2a);
+  color: #fff;
+  font-weight: 600;
+  font-family: "Tenor Sans", sans-serif; /* Ou Montserrat, selon ta préférence */
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+}
+
+.form-submit:hover {
+  background: linear-gradient(135deg, #3d2c2a, #a87c73);
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Lien pour la connexion */
+.form-link {
+  text-decoration: none;
+  color: #3d2c2a;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  margin-top: 0.3rem;
+  transition: color 0.3s ease;
+}
+
+.form-link:hover {
+  color: #a87c73;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+}
+
 /* 🌟 FOOTER STYLE */
 footer {
   background: linear-gradient(135deg, #2c2c2c, #734f43); /* Dégradé élégant */
@@ -652,7 +867,8 @@ footer {
 
 /* 👉 RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
-  .h2-chez,.h2-univers{
+  .h2-chez,
+  .h2-univers {
     font-size: 1.5em; /* Réduit de 0.5 */
   }
   .chez {
@@ -695,7 +911,8 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .h2-chez,.h2-univers {
+  .h2-chez,
+  .h2-univers {
     font-size: 1em; /* Réduit de 0.5 */
   }
   .chez {
@@ -771,7 +988,8 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .h2-chez,.h2-univers {
+  .h2-chez,
+  .h2-univers {
     font-size: 1em; /* Réduit de 0.5 */
   }
   .chez {
@@ -844,5 +1062,30 @@ footer {
   }
   .footer-newsletter button {
     font-size: 0.9em;
+  }
+  .form-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  main h2 {
+    font-size: 1.5em;
+  }
+
+  .form-submit {
+    font-size: 0.9rem;
+  }
+  .form-container-inscription {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  main h2 {
+    font-size: 1.5em;
+  }
+
+  .form-submit {
+    font-size: 0.9rem;
+    padding: 10px;
   }
 }
